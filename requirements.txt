@@ -1,5 +1,32 @@
-torch>=2.4.0
-numpy>=2.0.0,<2.8.0
-pandas>=2.2.0
-scikit-learn>=1.4.0
-flask>=3.0.0
+# requirements-lock.txt
+# Exact versions verified together in a clean environment — no ABI mismatches,
+# no NumPy 1.x/2.x conflicts. Install with:
+#   pip install -r requirements-lock.txt
+#
+# If you ever need to regenerate this after intentionally upgrading something:
+#   pip install --upgrade -r requirements.txt   (the loose one)
+#   pip freeze > requirements-lock.txt           (then trim to just what's needed)
+
+torch==2.13.0
+numpy==2.5.2
+pandas==3.0.5
+scikit-learn==1.9.0
+scipy==1.18.1
+Flask==3.1.3
+Werkzeug==3.1.8
+Jinja2==3.1.6
+MarkupSafe==3.0.3
+click==8.4.2
+itsdangerous==2.2.0
+blinker==1.9.0
+joblib==1.5.3
+threadpoolctl==3.6.0
+python-dateutil==2.9.0.post0
+six==1.17.0
+filelock==3.32.3
+fsspec==2026.7.0
+networkx==3.6.1
+sympy==1.14.0
+mpmath==1.3.0
+typing-extensions>=4.8.0
+narwhals==2.25.0
